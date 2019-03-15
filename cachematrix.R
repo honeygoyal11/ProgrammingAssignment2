@@ -1,7 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## This function provides the inverse matrix of a square matrix via the 'solve' function in R 
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -23,7 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve uses the makeCacheMatrix function (which in turn uses the matrix) elements of 'setinverse' & 'getinverse',
+## where it first checks if 'inv' previously exists, not having been 'set' under a new matrix in makeCacheMatrix 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
